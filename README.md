@@ -1,4 +1,5 @@
-# Small-js-projects
-Hello, I am Samana.
-I am going to upload here some examples of small projects that I create with JavaScript.
-I am currently learning.
+# Small-js-projects-Two-player-game
+### Hello, I am Samane.
+
+This repository shows a game played using dice, you can play this simple game with a partner, it's really fun.
+Hope you enjoy.
