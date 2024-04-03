@@ -51,3 +51,17 @@ btnRoll.addEventListener('click', function () {
     }
 });
 
+btnHold.addEventListener('click', function () {
+    score[activePlayer] += curentScore;
+    document.getElementById(`score--${activePlayer}`).textContent = score[activePlayer];
+    //winer
+    if (score[activePlayer] >= 100) {
+        playing = false;
+        diceEl.classList.add('hidden');
+        document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
+        document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
+    } else {
+        switchPlayer();
+    }
+});
+
