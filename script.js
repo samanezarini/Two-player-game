@@ -17,7 +17,25 @@ score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add('hidden');
 
+let score, curentScore, activePlayer, playing;
 
+//for new game btn
+const init = function () {
+    score = [0, 0];
+    curentScore = 0;
+    activePlayer = 0;
+    playing = true;
+    current0El.textContent = 0;
+    current1El.textContent = 0;
+    score0El.textContent = 0;
+    score1El.textContent = 0;
+    player0El.classList.remove('player--winner')
+    player1El.classList.remove('player--winner')
+    player0El.classList.add('player--active');
+    player1El.classList.remove('player--active');
+    diceEl.classList.add('hidden');
+};
+init();
 
 const switchPlayer = function () {
     document.getElementById(`current--${activePlayer}`).textContent = 0;
