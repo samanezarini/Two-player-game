@@ -3,7 +3,7 @@
 
 This repository shows a game played using dice, you can play this simple game with a partner, it's really fun.
 Hope you enjoy.
-فف
+
 ### Technologies used: 
 HTML, CSS, JAVASCRIPT
 
